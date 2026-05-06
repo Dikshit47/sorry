@@ -1,18 +1,14 @@
 body {
-  background: linear-gradient(135deg, #000000, #3a0ca3, #7209b7);
+  background: linear-gradient(135deg, black, purple);
   color: white;
   text-align: center;
   font-family: cursive;
   padding: 20px;
 }
 
-.center {
-  margin-top: 40%;
-}
-
 button {
-  padding: 12px 25px;
-  border-radius: 25px;
+  padding: 10px 20px;
+  border-radius: 20px;
   border: none;
   background: pink;
   margin: 10px;
@@ -22,45 +18,11 @@ button {
 .gallery img {
   width: 90%;
   max-width: 300px;
-  border-radius: 15px;
   margin: 10px;
+  border-radius: 15px;
 }
 
 .typewriter {
-  font-size: 22px;
-  margin-top: 50px;
-}
-
-.fade {
-  animation: fadeIn 2s ease-in;
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-/* Hearts */
-body::after {
-  content: "❤️ ❤️ ❤️ ❤️ ❤️";
-  position: fixed;
-  width: 100%;
-  animation: float 8s linear infinite;
-}
-
-@keyframes float {
-  from { top: 100%; }
-  to { top: -10%; }
-}
-
-/* Hidden */
-.hidden-trigger {
+  font-size: 20px;
   margin-top: 30px;
-  cursor: pointer;
-  color: pink;
-}
-
-.hidden-text {
-  display: none;
-  margin-top: 10px;
 }
