@@ -13,9 +13,14 @@ function typeEffect() {
 }
 typeEffect();
 
-// Music
+// Music (FIXED)
 function startMusic() {
-  document.getElementById("bgMusic").play();
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.play().catch(() => {
+      alert("Please ek baar aur tap kariye 🎵");
+    });
+  }
 }
 
 // Buttons
@@ -25,9 +30,4 @@ function yesClick() {
 
 function noClick() {
   document.getElementById("response").innerHTML = "Main wait karunga… jab tak aap ready ho ❤️";
-}
-
-// Hidden
-function showHidden() {
-  document.getElementById("hiddenMessage").style.display = "block";
 }
